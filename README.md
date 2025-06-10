@@ -2,7 +2,7 @@
 
 <img src="images/Lucid_logo.jpeg" alt="LUCID" style="float: left; margin-right: 15px; width: 200px;"/>
 
-## LUCID - Lighting Up Campus Indoor Spaces Dataset
+# LUCID - Lighting Up Campus Indoor Spaces Dataset
  **LUCID** has been made using a modified Pioneer3-DX robot, equipped with a monocular camera, LED bars, and a lux meter,
 specifically designed to study the performance of VO/V-SLAM monocular algorithms in dark indoor scenarios 
 where the only light source is provided by an auxiliary lighting source. </br>
@@ -57,7 +57,8 @@ includes:
 
 
 
-## Dataset Structure
+
+# Scenarios
 
 The LUCID dataset is hierarchically organized and follows the [Monocular Visual Odometry Dataset](https://cvg.cit.tum.de/data/datasets/mono-dataset) data format.
 It consists of more than 159 sequences (original and enhanced) acquired in three distinct indoor scenarios: 
@@ -65,10 +66,25 @@ It consists of more than 159 sequences (original and enhanced) acquired in three
 2. "Corridor_B", 
 3. "Hall".
 
+<table>
+
+  <tr>
+    <th rowspan="1" style="align-items: center"><img src="images/Maps/Corridor_A_Map.png" alt="Corridor_A_Map" width="300px"/> <br/></th>
+</tr>
+  <tr>
+    <th rowspan="1" style="align-items: center"><img src="images/Maps/Corridor_B_Map.png" alt="Corridor_B_Map" width="300px"/> <br/></th>
+</tr>
+  <tr>
+    <th rowspan="1" style="align-items: center"><img src="images/Maps/Hall_Map.png" alt="HALL" width="300px"/> <br/></th>
+  </tr>
+
+</table>
 
 
 
+# Data
 For each sequence, the following data are provided:
+
 * **Raw Images**: Raw image stream from the monocular camera.
 * **Ground Truth (GT) Trajectories**: Ground truth trajectories (robot poses) obtained using a 2D LiDAR and the A-MCL SLAM algorithm.
 * **Camera Calibration Data**: Intrinsic parameters, photometric calibration, and vignetting information.
@@ -78,8 +94,8 @@ For each sequence, the following data are provided:
 * **Rosbag Files**: The original rosbag files for each sequence, providing a synchronized recording of data for reproducibility and analysis.
 * **2D Maps (Hall, Corridor_A, Corridor_B)**: 2D occupancy grid maps of the scenarios obtained through laser scans.
 
-### Folder Organization (Example)
-### 4.3 Data organization
+
+## DATA Organization 
 
 ```shell
 LUCID
