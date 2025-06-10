@@ -7,7 +7,7 @@
 specifically designed to study the performance of VO/V-SLAM monocular algorithms in dark indoor scenarios 
 where the only light source is provided by an auxiliary lighting source. </br>
 **LUCID** was created as part of a study investigating the performance of two state-of-the-art (SOTA) V-SLAM algorithms, 
-Direct Sparse Odometry (DSO) and ORB-SLAM3 (OS3), in their monocular implementation, in dark indoor scenarios. 
+Direct Sparse Odometry (DSO) and ORB-SLAM3 (OS3), in their monocular implementation.
 
 **Open Access Paper**: [https://onlinelibrary.wiley.com/doi/10.1002/rob.22595](https://onlinelibrary.wiley.com/doi/10.1002/rob.22595)
 
