@@ -15,8 +15,11 @@ Direct Sparse Odometry (DSO) and ORB-SLAM3 (OS3), in their monocular implementat
 
 ## Changelog
 
+> [!WARNING]
+> Repository under construction!
+> 
 ***28, May 2025 update***</br> 
-Repository under construction, we are uploading and building the github repo.  </br></br>
+ Uploading and building tasks Started  </br></br>
 ***10, June 2025 update***</br> 
 - Public data uploading: we started uploading dataset, some scenarios are available but parts are missing. 
 - URL for data is available [Here](http://sira.diei.unipg.it/supplementary/public/Datasets/LUCID/)
