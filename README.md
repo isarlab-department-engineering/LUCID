@@ -302,7 +302,7 @@ The recorded topics include:
 
 
 ## 5 License
-ARD-VO is released under the following License:
+LUCID is released under the following License:
 
 Attribution-NonCommercial-ShareAlike 3.0 [CC BY-NC-SA 3.0](LICENSE).
 
