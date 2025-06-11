@@ -1,6 +1,6 @@
 
 
-<img src="images/Lucid_logo.jpeg" alt="LUCID" style="float: left; margin-right: 15px; width: 200px;"/>
+<img src="images/Lucid_logo.jpeg" alt="LUCID" style="float: left; margin-right: 15px; width: 35%;"/>
 
 # LUCID - Lighting Up Campus Indoor Spaces Dataset
  **LUCID** has been made using a modified Pioneer3-DX robot, equipped with a monocular camera, LED bars, and a lux meter,
