@@ -21,8 +21,12 @@ Repository under construction, we are uploading and building the github repo.  <
 - Public data uploading: we started uploading dataset, some scenarios are available but parts are missing. 
 - URL for data is available [Here](http://sira.diei.unipg.it/supplementary/public/Datasets/LUCID/)
 - Readme updated with the Architecture of the LUCID Dataset
+***11, June 2025 update***</br> 
+- Repository GIT updated, the Following Scenarios are already uploaded:
+  - Corridor_A
+  - Corridor_B
 
-# Overview
+## 1.Overview
 LUCID dataset consists of more than 159 sequences (original and enhanced) acquired in three distinct indoor scenarios and 
 includes:
 
@@ -40,7 +44,7 @@ includes:
   </tr>
 
   <tr>
-    <th rowspan="3" style="align-items: center"><img src="images/Pioneer_p3dx.png" alt="Pioneer P3DX" width="280px"/> <br/></th>
+    <th rowspan="3" style="align-items: center"><img src="images/P3DX_darkness.jpg" alt="Pioneer P3DX" width="360px"/> <br/></th>
     <tr>
       <td style="align-items: center"> <img src="images/i/i2.jpg" alt="Pioneer P3DX" width="150px"/> </td>
       <td style="align-items: center"> <img src="images/i/i4.jpg" alt="Pioneer P3DX" width="150px"/> </td>
@@ -56,34 +60,159 @@ includes:
 </table>
 
 
+## 2.Scenarios
+The LUCID dataset is hierarchically organized and follows the [TUM Monocular Visual Odometry Dataset](https://cvg.cit.tum.de/data/datasets/mono-dataset) format.
+It consists of more than 159 sequences (original and enhanced) acquired in three distinct indoor scenarios within the
+Department of Engineering, University of Perugia, Italy. 
+These scenarios were selected based on criteria such as path length and complexity, texture richness, and navigability space.
 
 
-# Scenarios
+| LUCID Scenario | # Sequences | Avg. length [m] | Loop Closing |
+|----------------|-------------|-----------------|--------------|
+| Corridor_A     | 49          | 31.1826         | ✗            |
+| Corridor_B     | 61          | 28.3467         | ✗            |
+| Hall           | 49          | 122.6096        | ✓            |
 
-The LUCID dataset is hierarchically organized and follows the [Monocular Visual Odometry Dataset](https://cvg.cit.tum.de/data/datasets/mono-dataset) data format.
-It consists of more than 159 sequences (original and enhanced) acquired in three distinct indoor scenarios: 
-1. "Corridor_A", 
-2. "Corridor_B", 
-3. "Hall".
 
+- The first two scenarios, labeled "**Corridor_A**" and "**Corridor_B**," are transit areas to reach offices and
+laboratories. They represent most of the way to the mission destination in real indoor scenarios.
+- The third scenario, "**Hall**", is one floor of a comprehensive space between different buildings, comprising two main 
+areas connected by two hallways, with desks and chairs.
+
+  
 <table>
 
   <tr>
-    <th rowspan="1" style="align-items: center"><img src="images/Maps/Corridor_A_Map.png" alt="Corridor_A_Map" width="300px"/> <br/></th>
+    <th rowspan="1" style="align-items: center"><img src="images/Scenarios/Corridor_A.jpg" alt="Corridor_A_Map" width="300px"/> <br/></th>
+    <th rowspan="1" style="align-items: center"><img src="images/Scenarios/Corridor_B.jpg" alt="Corridor_A_Map" width="300px"/> <br/></th>
+    <th rowspan="1" style="align-items: center"><img src="images/Scenarios/Hall.jpg" alt="Corridor_A_Map" width="300px"/> <br/></th>
+    
+  </tr>
+  <tr>
+    <th rowspan="1" style="align-items: center"><img src="images/Scenarios/Corridor_A_1.jpg" alt="Corridor_A_Map" width="300px"/> <br/></th>
+    <th rowspan="1" style="align-items: center"><img src="images/Scenarios/Corridor_B_1.jpg" alt="Corridor_A_Map" width="300px"/> <br/></th>
+    <th rowspan="1" style="align-items: center"><img src="images/Scenarios/Hall_1.jpg" alt="Corridor_A_Map" width="300px"/> <br/></th>
 </tr>
   <tr>
-    <th rowspan="1" style="align-items: center"><img src="images/Maps/Corridor_B_Map.png" alt="Corridor_B_Map" width="300px"/> <br/></th>
-</tr>
-  <tr>
-    <th rowspan="1" style="align-items: center"><img src="images/Maps/Hall_Map.png" alt="HALL" width="300px"/> <br/></th>
+    <th rowspan="1" style="align-items: center"><img src="images/Scenarios/Maps/Corridor_A_Map.png" alt="Corridor_A_Map" width="300px"/> <br/></th>
+    <th rowspan="1" style="align-items: center"><img src="images/Scenarios/Maps/Corridor_B_Map.png" alt="Corridor_B_Map" width="300px"/> <br/></th>
+    <th rowspan="1" style="align-items: center"><img src="images/Scenarios/Maps/Hall_Map.png" alt="HALL" width="300px"/> <br/></th>
+  </tr>
+  <tr>  
+    <th style="align-items: center"> Corridor_A</th>
+    <th style="align-items: center"> Corridor_B</th>
+    <th style="align-items: center"> HALL</th>
   </tr>
 
 </table>
 
 
+## 3.Data
+  
+### 3.1 Robotic Platform
 
-# Data
-For each sequence, the following data are provided:
+We employed a real-world robot with custom hardware for gathering data.
+
+<img src="images/Pioneer_p3dx.png" alt="LUCID" style="float: left; margin-right: 40px; width: 200px;"/>
+
+The main sensors and actuators involved with the dataset are:
+ - Monocular Camera Module
+ - Three light bars: Auxiliary light source, 8bit PWM controlled 0 -> 255 (0% -> 100% light intensity). 
+ - Luxometer (Light sensor): mounted close to the camera lens to measure the incident light.
+ - 2D LiDaR, used to:
+   - navigate scenarios according to the planned waypointsught the scenario,
+   - GT of the trajectories
+   - 2D map creation
+
+  The table below describes in detail Camera and Lighting devices.
+
+| Device             | Description                                    |
+|--------------------|------------------------------------------------|
+| **Monocular Camera** |                                                |
+| Sensor             | USB 3.0 mvBlueFOX3-1 global shutter            |
+| Max Resolution     | 1280x1024 (1.3 megapixels)                     |
+| Shutter Speed      | Max 120 Frames per Second (FPS)                |
+| Image Format       | Mono8, ..., Mono16, Bayer8, ..., Bayer16, RGB, YUV |
+| Lens               | C-mount, 5mm F1.8 fixed                        |
+| **Lightening Rig** |                                                |
+| LED Bars           | Left/Right 18 W, Center 36 W                   |
+|                    | 60° beam, 6000 K ~ 6500 K light temperature    |
+| Light Sensor       | BH1750 [0 lux, ..., 65000 lux]                 |
+| Current Sensor     | 3 channels INA3221                             |
+| Control Unit       | LHR - Light Handler Board (Custom)             |
+| Communication      | LHR Serial @ 57600 Baud 8N1                    |
+
+For each scenario and light condition, to make the results comparable, we fixed the recording parameters of the camera 
+and the robot speed.
+  
+| Data Acquisition | Value              |
+|------------------|--------------------|
+| Robot Avg Speed  | 0.4 m/s            |
+| Shutter Speed    | 39 ms              |
+| Avg. FPS         | 24                 |
+| Focus            | Fixed              |
+| Focal Aperture   | F1.8               |
+| Resolution       | BGR8 @ 640 × 480   |
+| Image Format     | Jpeg               |
+
+
+### 3.2 Data Collection 
+Data collection was carried out to test the system's performance under changing conditions. 
+For each scenario, multiple sequences of data were acquired, differentiated by the lighting level (PWM) and the trial number for each configuration.
+
+The sequence names follow a specific syntax to clearly identify the experimental conditions:
+
+    Scenario_LightCondition_PWMValue_TrialNumber
+    Scenario_LightCondition_TrialNumber (for baseline lighting)
+
+Here's a breakdown of the naming conventions:
+
+* **Scenario**: Indicates the location (e.g., Hall, Corridor_A).
+* **LightCondition**: Specifies the type of lighting used:
+  * **L0**: Represents ideal, reference ambient lighting.
+  * **D**: Denotes auxiliary artificial lighting.
+    * **PWMValue**: (Applies to D condition) The Pulse Width Modulation value, ranging from 0 to 255, controlling the intensity of the auxiliary artificial light.
+* **Tx**: The trial number (e.g., T1, T2, T3), indicating a repeated experiment under the same lighting and scenario conditions.
+* **_ENH**: An optional suffix indicating an "Enhanced" condition, which implies specific additional processing or setup not explicitly detailed here but unique to that sequence.
+
+
+| Sequence ID      | Scenario    | Light Condition | PWM Value                 | Trial | Description |
+|------------------|-------------|-----------------|-----------|-------|-----|
+| Corridor_A_L0_T1 | Corridor_A  | L (Light good)  | 0 PWM  | 1     | Ideal ambient light, Corridor_A, first trial 
+| Corridor_A_L0_T2 | Corridor_A  | L (Light good)  | 0 PWM  | 2     | Same condition of "Corridor_A_L0_T1", second trial 
+| Hall_D_40_T3     | Hall        | D (Darkness)    | 40 PWM | 3     | Darkness with auxiliary light at 40 PWM level (0<PWM<255), third trial
+| Hall_D_40_T3_ENH | 50          | D (Darkness)    | 40 PWM | 3     | Same sequence "Hall_D_40_T3", but images enhanced with EnligthenGAN         
+          
+
+In the following table it is possible to notice for Corridor_A the images of different sequence at different PWM level and
+enhancement processing.
+
+<table>
+
+  <tr>
+    <th rowspan="1" style="align-items: center"><img src="images/Enhance/img_D25.jpg" alt="img_D25" width="150px"/> <br/></th>
+    <th rowspan="1" style="align-items: center"><img src="images/Enhance/img_D127.jpg" alt="img_D127" width="150px"/> <br/></th>
+    <th rowspan="1" style="align-items: center"><img src="images/Enhance/img_D255.jpg" alt="img_D255" width="150px"/> <br/></th>
+    <th rowspan="1" style="align-items: center"><img src="images/Enhance/img_L0.jpg" alt="Corridor_A_Map" width="150px"/> <br/></th>
+    <th rowspan="1" style="align-items: center"><img src="images/Enhance/img_D25_ENH.jpg" alt="img_D25_ENH" width="150px"/> <br/></th>
+    <th rowspan="1" style="align-items: center"><img src="images/Enhance/img_D127_ENH.jpg" alt="img_D127_EMH" width="150px"/> <br/></th>
+    <th rowspan="1" style="align-items: center"><img src="images/Enhance/img_D255_ENH.jpg" alt="img_D255_ENH" width="150px"/> <br/></th>
+  </tr>
+
+  <tr>
+  <th rowspan="1"> PWM 25</th>
+  <th rowspan="1"> PWM 127</th>
+  <th rowspan="1"> PWM 255</th>
+  <th rowspan="1"> LIGHT</th>
+  <th rowspan="1"> PWM 25 - ENH</th>
+  <th rowspan="1"> PWM 127 - ENH</th>
+  <th rowspan="1"> PWM 255 - ENH</th>
+  </tr>
+
+</table>
+
+
+**the following data are provided:**
 
 * **Raw Images**: Raw image stream from the monocular camera.
 * **Ground Truth (GT) Trajectories**: Ground truth trajectories (robot poses) obtained using a 2D LiDAR and the A-MCL SLAM algorithm.
@@ -95,7 +224,7 @@ For each sequence, the following data are provided:
 * **2D Maps (Hall, Corridor_A, Corridor_B)**: 2D occupancy grid maps of the scenarios obtained through laser scans.
 
 
-## DATA Organization 
+### 3.3 DATA Organization 
 
 ```shell
 LUCID
@@ -150,8 +279,26 @@ LUCID
                         └── Hall_D_255__ENH/
 ```
 
+## 4 ROS1 
 
-## License
+The navigation stack of the robotic platform is based on ROS1, which provides the rosbag tool to collect files containing
+topics and messages. We included the bag files for each sequence to facilitate reproducibility and further research.
+These ROS bags provide a synchronized record of the data, supporting experiment replay, synchronized data analysis, and the
+development of new low-light VO/VSLAM algorithms. 
+
+### 4.1 Topics
+The recorded topics include:
+
+| ROS Topic                          | Description                                                               |
+|------------------------------------|---------------------------------------------------------------------------|
+| `/bluefox_camera/image_raw`        | Raw image stream from the camera.                                         |
+| `/bluefox_camera/shutter_speed`    | Camera shutter speed.                                                     |
+| `/clock`                           | Clock signal for synchronization of different data streams.               |
+| `/light_rig/sensors`               | Measurements from the light rig sensors (e.g., lux meter, PWM intensity). |
+| `/tf`                              | Transformations between different coordinate frames (i.e., robot base, camera, world, LiDAR). |
+
+
+## 5 License
 ARD-VO is released under the following License:
 
 Attribution-NonCommercial-ShareAlike 3.0 [CC BY-NC-SA 3.0](LICENSE).
