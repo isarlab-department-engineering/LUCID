@@ -311,7 +311,6 @@ The recorded topics include:
 | `/tf`                              | Transformations between different coordinate frames (i.e., robot base, camera, world, LiDAR). |
 
    - **Note**: the rosbag files do not contain the enhanced images, since the enhancement process is performed offline.
-   - **Note1**: If you want to process (enhance the files) it is possible to use our forked version of Enlightengan
 
 ## 5 License
 LUCID is released under the following License:
