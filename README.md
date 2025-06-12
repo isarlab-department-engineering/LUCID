@@ -2,10 +2,11 @@
 
 <img src="images/Lucid_logo.jpeg" alt="LUCID" style="float: left; margin-right: 15px; width: 35%;"/>
 
+
 # LUCID - Lighting Up Campus Indoor Spaces Dataset
  **LUCID** has been made using a modified Pioneer3-DX robot, equipped with a monocular camera, LED bars, and a lux meter,
 specifically designed to study the performance of VO/V-SLAM monocular algorithms in dark indoor scenarios 
-where the only light source is provided by an auxiliary lighting source. </br>
+where the only light source is provided by an auxiliary lighting source. <br/>
 **LUCID** was created as part of a study investigating the performance of two state-of-the-art (SOTA) V-SLAM algorithms, 
 Direct Sparse Odometry (DSO) and ORB-SLAM3 (OS3), in their monocular implementation.
 
@@ -13,21 +14,6 @@ Direct Sparse Odometry (DSO) and ORB-SLAM3 (OS3), in their monocular implementat
 
 <br clear="left"/> 
 
-## Changelog
-
-> [!WARNING]
-> Repository under construction!
-> 
-***28, May 2025 update***</br> 
- Uploading and building tasks Started  </br></br>
-***10, June 2025 update***</br> 
-- Public data uploading: we started uploading dataset, some scenarios are available but parts are missing. 
-- URL for data is available [Here](http://sira.diei.unipg.it/supplementary/public/Datasets/LUCID/)
-- Readme updated with the Architecture of the LUCID Dataset
-***11, June 2025 update***</br> 
-- Repository GIT updated, the Following Scenarios are already uploaded:
-  - Corridor_A
-  - Corridor_B
 
 ## 1.Overview
 LUCID dataset consists of more than 159 sequences (original and enhanced) acquired in three distinct indoor scenarios and 
@@ -42,23 +28,25 @@ includes:
 
 <table>
   <tr>
-   <th colspan="1">P3DX ROBOT</th>
-   <th colspan="4">LUCID Images Examples</th>
+   <th colspan="2">P3DX ROBOT</th>
+   <th colspan="5">LUCID Images Examples</th>
   </tr>
-
   <tr>
-    <th rowspan="3" style="align-items: center"><img src="images/P3DX_darkness.jpg" alt="Pioneer P3DX" width="360px"/> <br/></th>
+    <td rowspan="2" colspan="2" style="text-align: center;  vertical-align: middle;"><img src="images/P3DX_darkness.jpg" alt="Pioneer P3DX" width="360px"/> <br/></td>
+      <td style="text-align: center;  vertical-align: middle;"> <img src="images/I/i7.jpg" alt="i7" width="150px"/> </td>
+      <td style="text-align: center;  vertical-align: middle;"> <img src="images/I/i8.jpg" alt="i8" width="150px"/> </td>
+   <td rowspan="2" colspan="2" style="text-align: center;  vertical-align: middle;"><img src="images/Lucid_example.gif" alt="Pioneer P3DX" width="360px"/> <br/></td>
     <tr>
-      <td style="align-items: center"> <img src="images/i/i2.jpg" alt="Pioneer P3DX" width="150px"/> </td>
-      <td style="align-items: center"> <img src="images/i/i4.jpg" alt="Pioneer P3DX" width="150px"/> </td>
-      <td style="align-items: center"> <img src="images/i/i1.jpg" alt="Pioneer P3DX" width="150px"/> </td>
-      <td style="align-items: center"> <img src="images/i/i6.jpg" alt="Pioneer P3DX" width="150px"/> </td>
+      <td style="text-align: center;  vertical-align: middle;"> <img src="images/I/i1.jpg" alt="i1" width="150px"/> </td>
+      <td style="text-align: center;  vertical-align: middle;"> <img src="images/I/i6.jpg" alt="i6" width="150px"/> </td>
     </tr>
     <tr>
-      <td style="align-items: center"> <img src="images/i/i3.jpg" alt="Pioneer P3DX" width="150px"/> </td>
-      <td style="align-items: center"> <img src="images/i/i5.jpg" alt="Pioneer P3DX" width="150px"/> </td>
-      <td style="align-items: center"> <img src="images/i/i7.jpg" alt="Pioneer P3DX" width="150px"/> </td>
-      <td style="align-items: center"> <img src="images/i/i8.jpg" alt="Pioneer P3DX" width="150px"/> </td>
+      <td style="text-align: center;  vertical-align: middle;"> <img src="images/I/i4.jpg" alt="i4" width="150px"/> </td>
+      <td style="text-align: center;  vertical-align: middle;"> <img src="images/I/i3.jpg" alt="i3" width="150px"/> </td>
+      <td style="text-align: center;  vertical-align: middle;"> <img src="images/I/i2.jpg" alt="i2" width="150px"/> </td>
+      <td style="text-align: center;  vertical-align: middle;"> <img src="images/I/i5.jpg" alt="i5" width="150px"/> </td>
+      <td style="text-align: center;  vertical-align: middle;"> <img src="images/I/i10.jpg" alt="i10" width="150px"/> </td>
+      <td style="text-align: center;  vertical-align: middle;"> <img src="images/I/i9.jpg" alt="i9" width="150px"/> </td>
     </tr>
 </table>
 
@@ -86,32 +74,55 @@ areas connected by two hallways, with desks and chairs.
 <table>
 
   <tr>
-    <th rowspan="1" style="align-items: center"><img src="images/Scenarios/Corridor_A.jpg" alt="Corridor_A_Map" width="300px"/> <br/></th>
-    <th rowspan="1" style="align-items: center"><img src="images/Scenarios/Corridor_B.jpg" alt="Corridor_A_Map" width="300px"/> <br/></th>
-    <th rowspan="1" style="align-items: center"><img src="images/Scenarios/Hall.jpg" alt="Corridor_A_Map" width="300px"/> <br/></th>
+    <th rowspan="1" style="text-align: center;  vertical-align: middle;"><img src="images/Scenarios/Corridor_A.jpg" alt="Corridor_A_Map" width="300px"/> <br/></th>
+    <th rowspan="1" style="text-align: center;  vertical-align: middle;"><img src="images/Scenarios/Corridor_B.jpg" alt="Corridor_A_Map" width="300px"/> <br/></th>
+    <th rowspan="1" style="text-align: center;  vertical-align: middle;"><img src="images/Scenarios/Hall.jpg" alt="Corridor_A_Map" width="300px"/> <br/></th>
     
   </tr>
   <tr>
-    <th rowspan="1" style="align-items: center"><img src="images/Scenarios/Corridor_A_1.jpg" alt="Corridor_A_Map" width="300px"/> <br/></th>
-    <th rowspan="1" style="align-items: center"><img src="images/Scenarios/Corridor_B_1.jpg" alt="Corridor_A_Map" width="300px"/> <br/></th>
-    <th rowspan="1" style="align-items: center"><img src="images/Scenarios/Hall_1.jpg" alt="Corridor_A_Map" width="300px"/> <br/></th>
+    <th rowspan="1" style="text-align: center;  vertical-align: middle;"><img src="images/Scenarios/Corridor_A_1.jpg" alt="Corridor_A_Map" width="300px"/> <br/></th>
+    <th rowspan="1" style="text-align: center;  vertical-align: middle;"><img src="images/Scenarios/Corridor_B_1.jpg" alt="Corridor_A_Map" width="300px"/> <br/></th>
+    <th rowspan="1" style="text-align: center;  vertical-align: middle;"><img src="images/Scenarios/Hall_1.jpg" alt="Corridor_A_Map" width="300px"/> <br/></th>
 </tr>
   <tr>
-    <th rowspan="1" style="align-items: center"><img src="images/Scenarios/Maps/Corridor_A_Map.png" alt="Corridor_A_Map" width="300px"/> <br/></th>
-    <th rowspan="1" style="align-items: center"><img src="images/Scenarios/Maps/Corridor_B_Map.png" alt="Corridor_B_Map" width="300px"/> <br/></th>
-    <th rowspan="1" style="align-items: center"><img src="images/Scenarios/Maps/Hall_Map.png" alt="HALL" width="300px"/> <br/></th>
+    <th rowspan="1" style="text-align: center;  vertical-align: middle;"><img src="images/Scenarios/Maps/Corridor_A_Map.png" alt="Corridor_A_Map" width="300px"/> <br/></th>
+    <th rowspan="1" style="text-align: center;  vertical-align: middle;"><img src="images/Scenarios/Maps/Corridor_B_Map.png" alt="Corridor_B_Map" width="300px"/> <br/></th>
+    <th rowspan="1" style="text-align: center;  vertical-align: middle;"><img src="images/Scenarios/Maps/Hall_Map.png" alt="HALL" width="300px"/> <br/></th>
   </tr>
   <tr>  
-    <th style="align-items: center"> Corridor_A</th>
-    <th style="align-items: center"> Corridor_B</th>
-    <th style="align-items: center"> HALL</th>
+    <th style="text-align: center;  vertical-align: middle;"> Corridor_A</th>
+    <th style="text-align: center;  vertical-align: middle;"> Corridor_B</th>
+    <th style="text-align: center;  vertical-align: middle;"> HALL</th>
   </tr>
 
 </table>
 
 
 ## 3.Data
-  
+
+For convenience the dataset has been organized and compressed in three types of archives (.zip):
+1. **ScenarioXXX.zip**: Containing all the sequences (PWMs and Enhanced Version), GT trajectories, sensors data and Maps
+   - "Corridor_A" and "Corridor_B" archives also contain the trajectories for all the sequences obtained with 
+   [ORBSLAM3](https://github.com/UZ-SLAMLab/ORB_SLAM3) and [DSO](https://github.com/JakobEngel/dso)
+2. **Lens_Calibration.zip**: Intrinsics Camera calibration Files, computed with the [Kalibr](https://github.com/ethz-asl/kalibr) Tool.
+3. **ScenarioXXX_ROS.zip**: The Raw rosbag files, with aligned timestamps of all the sequence.
+
+| Data Download                                                                                                 | Description                                                                | Size   |
+|---------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|--------|
+| [Corridor_A.zip](http://sira.diei.unipg.it/supplementary/public/Datasets/LUCID/Corridor_A.zip)                | LUCID dataset: Corridor_A sequences, GT + ORB/DSO trajectories + Lux data  | ~4.3G  |
+| [Corridor_B.zip](http://sira.diei.unipg.it/supplementary/public/Datasets/LUCID/Corridor_B.zip)                | LUCID dataset: Corridor_B sequences + GT + ORB/DSO trajectories + Lux data | ~8.7G  |
+| [Hall.zip](http://sira.diei.unipg.it/supplementary/public/Datasets/LUCID/Hall.zip)                            | LUCID dataset: Hall sequences + GT trajectories + Lux data                 | ~19G   |
+| [Corridor_A_ROS.zip](http://sira.diei.unipg.it/supplementary/public/Datasets/LUCID/Corridor_A_ROS.zip)        | Rosbags of Corridor_A sequences                                            | ~27G   |
+| [Corridor_B_ROS.zip](http://sira.diei.unipg.it/supplementary/public/Datasets/LUCID/Corridor_B_ROS.zip)        | Rosbags of Corridor_B sequences                                            | ~47G   |
+| [Hall_ROS.zip](http://sira.diei.unipg.it/supplementary/public/Datasets/LUCID/Hall_ROS.zip)                    | Rosbags of Hall sequences                                                  | ~116G  |
+| [Lens_Calibration.zip](http://sira.diei.unipg.it/supplementary/public/Datasets/LUCID/Lens_Calibrations.zip)   | Kalibr intrinsics calibration files                                        | ~859K  |
+
+
+If you want to explore the dataset remote directory:
+ ```url
+http://sira.diei.unipg.it/supplementary/public/Datasets/LUCID/
+ ```
+    
 ### 3.1 Robotic Platform
 
 We employed a real-world robot with custom hardware for gathering data.
@@ -179,13 +190,12 @@ Here's a breakdown of the naming conventions:
 * **_ENH**: An optional suffix indicating an "Enhanced" condition, which implies specific additional processing or setup not explicitly detailed here but unique to that sequence.
 
 
-| Sequence ID      | Scenario    | Light Condition | PWM Value                 | Trial | Description |
-|------------------|-------------|-----------------|-----------|-------|-----|
-| Corridor_A_L0_T1 | Corridor_A  | L (Light good)  | 0 PWM  | 1     | Ideal ambient light, Corridor_A, first trial 
-| Corridor_A_L0_T2 | Corridor_A  | L (Light good)  | 0 PWM  | 2     | Same condition of "Corridor_A_L0_T1", second trial 
-| Hall_D_40_T3     | Hall        | D (Darkness)    | 40 PWM | 3     | Darkness with auxiliary light at 40 PWM level (0<PWM<255), third trial
-| Hall_D_40_T3_ENH | 50          | D (Darkness)    | 40 PWM | 3     | Same sequence "Hall_D_40_T3", but images enhanced with EnligthenGAN         
-          
+| Sequence ID      | Scenario   | Light Condition | PWM Value | Trial | Description                                                            |
+|------------------|------------|-----------------|-----------|-------|------------------------------------------------------------------------|
+| Corridor_A_L0_T1 | Corridor_A | L (Light good)  | 0 PWM     | 1     | Ideal ambient light, Corridor_A, first trial                           |
+| Corridor_A_L0_T2 | Corridor_A | L (Light good)  | 0 PWM     | 2     | Same condition of "Corridor_A_L0_T1", second trial                     |
+| Hall_D_40_T3     | Hall       | D (Darkness)    | 40 PWM    | 3     | Darkness with auxiliary light at 40 PWM level (0<PWM<255), third trial |
+| Hall_D_40_T3_ENH | Hall       | D (Darkness)    | 40 PWM    | 3     | Same sequence "Hall_D_40_T3", but images enhanced with EnligthenGAN    |
 
 In the following table it is possible to notice for Corridor_A the images of different sequence at different PWM level and
 enhancement processing.
@@ -193,13 +203,13 @@ enhancement processing.
 <table>
 
   <tr>
-    <th rowspan="1" style="align-items: center"><img src="images/Enhance/img_D25.jpg" alt="img_D25" width="150px"/> <br/></th>
-    <th rowspan="1" style="align-items: center"><img src="images/Enhance/img_D127.jpg" alt="img_D127" width="150px"/> <br/></th>
-    <th rowspan="1" style="align-items: center"><img src="images/Enhance/img_D255.jpg" alt="img_D255" width="150px"/> <br/></th>
-    <th rowspan="1" style="align-items: center"><img src="images/Enhance/img_L0.jpg" alt="Corridor_A_Map" width="150px"/> <br/></th>
-    <th rowspan="1" style="align-items: center"><img src="images/Enhance/img_D25_ENH.jpg" alt="img_D25_ENH" width="150px"/> <br/></th>
-    <th rowspan="1" style="align-items: center"><img src="images/Enhance/img_D127_ENH.jpg" alt="img_D127_EMH" width="150px"/> <br/></th>
-    <th rowspan="1" style="align-items: center"><img src="images/Enhance/img_D255_ENH.jpg" alt="img_D255_ENH" width="150px"/> <br/></th>
+    <th rowspan="1" style="text-align: center;  vertical-align: middle;"><img src="images/Enhance/img_D25.jpg" alt="img_D25" width="150px"/> <br/></th>
+    <th rowspan="1" style="text-align: center;  vertical-align: middle;"><img src="images/Enhance/img_D127.jpg" alt="img_D127" width="150px"/> <br/></th>
+    <th rowspan="1" style="text-align: center;  vertical-align: middle;"><img src="images/Enhance/img_D255.jpg" alt="img_D255" width="150px"/> <br/></th>
+    <th rowspan="1" style="text-align: center;  vertical-align: middle;"><img src="images/Enhance/img_L0.jpg" alt="Corridor_A_Map" width="150px"/> <br/></th>
+    <th rowspan="1" style="text-align: center;  vertical-align: middle;"><img src="images/Enhance/img_D25_ENH.jpg" alt="img_D25_ENH" width="150px"/> <br/></th>
+    <th rowspan="1" style="text-align: center;  vertical-align: middle;"><img src="images/Enhance/img_D127_ENH.jpg" alt="img_D127_EMH" width="150px"/> <br/></th>
+    <th rowspan="1" style="text-align: center;  vertical-align: middle;"><img src="images/Enhance/img_D255_ENH.jpg" alt="img_D255_ENH" width="150px"/> <br/></th>
   </tr>
 
   <tr>
@@ -300,6 +310,8 @@ The recorded topics include:
 | `/light_rig/sensors`               | Measurements from the light rig sensors (e.g., lux meter, PWM intensity). |
 | `/tf`                              | Transformations between different coordinate frames (i.e., robot base, camera, world, LiDAR). |
 
+   - **Note**: the rosbag files do not contain the enhanced images, since the enhancement process is performed offline.
+   - **Note1**: If you want to process (enhance the files) it is possible to use our forked version of Enlightengan
 
 ## 5 License
 LUCID is released under the following License:
@@ -310,9 +322,31 @@ This means it is possible:
 * to copy, distribute, display, and perform the work. 
 * to make derivative works.
 
-Under the following conditions:</br>
- - Attribution: You must give the original author credit.</br>
- - Non-Commercial — You may not use this work for commercial purposes. </br>
+Under the following conditions:<br/>
+ - Attribution: You must give the original author credit.<br/>
+ - Non-Commercial — You may not use this work for commercial purposes. <br/>
  - Share Alike — If you alter, transform, or build upon this work, you may distribute the resulting work only under a licence identical to this one.
 
+
+# Keep In touch!
+
+<a href="https://isar.unipg.it/">
+  <img src="images/Logos/isarlab_logo.png" alt="Isarlab Website" style="width: 20%; max-width: 200px;">
+</a>
+
+<a href="https://www.facebook.com/ISARLabUNIPG/">
+  <img src="images/Logos/fb_logo.svg" alt="Isarlab on Facebook" style="width: 5%; max-width: 60px;">
+</a>
+
+<a href="https://www.linkedin.com/company/80882760/admin/dashboard/">
+  <img src="images/Logos/linkedn_log.svg" alt="Isarlab on Linkedin" style="width: 5%; max-width: 60px; margin-right: 15px;">
+</a>
+
+<a href="https://www.youtube.com/channel/UCWyTotduQ1A4C7UT60uYU6Q">
+  <img src="images/Logos/ytb_logo.png" alt="Isarlab on Linkedin" style="width: 5%; max-width: 60px; margin-right: 15px;">
+</a>
+
+<a href="https://github.com/isarlab-department-engineering">
+  <img src="images/Logos/github_icon.svg" alt="Isarlab on GitHub" style="width: 5%; max-width: 60px; ">
+</a>
 
