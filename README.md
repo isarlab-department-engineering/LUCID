@@ -146,7 +146,7 @@ For convenience the dataset has been organized and compressed in three types of 
       <td>~116G</td>
     </tr>
     <tr>
-      <td><a href="http://sira.diei.unipg.it/supplementary/public/Datasets/LUCID/Lens_Calibrations.zip" target="_blank" rel="noopener noreferrer">Lens_Calibrations.zip</a></td>
+      <td><a href="http://sira.diei.unipg.it/supplementary/public/Datasets/LUCID/Lens_Calibration.zip" target="_blank" rel="noopener noreferrer">Lens_Calibration.zip</a></td>
       <td>Kalibr intrinsics calibration files</td>
       <td>~859K</td>
     </tr>
