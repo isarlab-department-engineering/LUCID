@@ -131,7 +131,7 @@ For convenience the dataset has been organized and compressed in three types of 
       <td>~19G</td>
     </tr>
     <tr>
-      <td><a href="http://sira.diei.unipg.it/supplementary/public/Datasets/LUCID/Corridor_A_ROS.zip" rel="noopener noreferrer">Corridor_A_ROS.zip</a></td>
+      <td><a href="http://sira.diei.unipg.it/supplementary/public/Datasets/LUCID/Corridor_A_ROS.zip" target="_blank" rel="noopener noreferrer">Corridor_A_ROS.zip</a></td>
       <td>Rosbags of Corridor_A sequences</td>
       <td>~27G</td>
     </tr>
