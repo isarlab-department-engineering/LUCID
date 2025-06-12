@@ -106,17 +106,52 @@ For convenience the dataset has been organized and compressed in three types of 
    [ORBSLAM3](https://github.com/UZ-SLAMLab/ORB_SLAM3) and [DSO](https://github.com/JakobEngel/dso)
 2. **Lens_Calibration.zip**: Intrinsics Camera calibration Files, computed with the [Kalibr](https://github.com/ethz-asl/kalibr) Tool.
 3. **ScenarioXXX_ROS.zip**: The Raw rosbag files, with aligned timestamps of all the sequence.
-
-| Data Download                                                                                                 | Description                                                                | Size   |
-|---------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|--------|
-| [Corridor_A.zip](http://sira.diei.unipg.it/supplementary/public/Datasets/LUCID/Corridor_A.zip)                | LUCID dataset: Corridor_A sequences, GT + ORB/DSO trajectories + Lux data  | ~4.3G  |
-| [Corridor_B.zip](http://sira.diei.unipg.it/supplementary/public/Datasets/LUCID/Corridor_B.zip)                | LUCID dataset: Corridor_B sequences + GT + ORB/DSO trajectories + Lux data | ~8.7G  |
-| [Hall.zip](http://sira.diei.unipg.it/supplementary/public/Datasets/LUCID/Hall.zip)                            | LUCID dataset: Hall sequences + GT trajectories + Lux data                 | ~19G   |
-| [Corridor_A_ROS.zip](http://sira.diei.unipg.it/supplementary/public/Datasets/LUCID/Corridor_A_ROS.zip)        | Rosbags of Corridor_A sequences                                            | ~27G   |
-| [Corridor_B_ROS.zip](http://sira.diei.unipg.it/supplementary/public/Datasets/LUCID/Corridor_B_ROS.zip)        | Rosbags of Corridor_B sequences                                            | ~47G   |
-| [Hall_ROS.zip](http://sira.diei.unipg.it/supplementary/public/Datasets/LUCID/Hall_ROS.zip)                    | Rosbags of Hall sequences                                                  | ~116G  |
-| [Lens_Calibration.zip](http://sira.diei.unipg.it/supplementary/public/Datasets/LUCID/Lens_Calibrations.zip)   | Kalibr intrinsics calibration files                                        | ~859K  |
-
+<table>
+  <thead>
+    <tr>
+      <th>Data Download</th>
+      <th>Description</th>
+      <th>Size</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="http://sira.diei.unipg.it/supplementary/public/Datasets/LUCID/Corridor_A.zip" target="_blank" rel="noopener noreferrer">Corridor_A.zip</a></td>
+      <td>LUCID dataset: Corridor_A sequences, GT + ORB/DSO trajectories + Lux data</td>
+      <td>~4.3G</td>
+    </tr>
+    <tr>
+      <td><a href="http://sira.diei.unipg.it/supplementary/public/Datasets/LUCID/Corridor_B.zip" target="_blank" rel="noopener noreferrer">Corridor_B.zip</a></td>
+      <td>LUCID dataset: Corridor_B sequences + GT + ORB/DSO trajectories + Lux data</td>
+      <td>~8.7G</td>
+    </tr>
+    <tr>
+      <td><a href="http://sira.diei.unipg.it/supplementary/public/Datasets/LUCID/Hall.zip" target="_blank" rel="noopener noreferrer">Hall.zip</a></td>
+      <td>LUCID dataset: Hall sequences + GT trajectories + Lux data</td>
+      <td>~19G</td>
+    </tr>
+    <tr>
+      <td><a href="http://sira.diei.unipg.it/supplementary/public/Datasets/LUCID/Corridor_A_ROS.zip" target="_blank" rel="noopener noreferrer">Corridor_A_ROS.zip</a></td>
+      <td>Rosbags of Corridor_A sequences</td>
+      <td>~27G</td>
+    </tr>
+    <tr>
+      <td><a href="http://sira.diei.unipg.it/supplementary/public/Datasets/LUCID/Corridor_B_ROS.zip" target="_blank" rel="noopener noreferrer">Corridor_B_ROS.zip</a></td>
+      <td>Rosbags of Corridor_B sequences</td>
+      <td>~47G</td>
+    </tr>
+    <tr>
+      <td><a href="http://sira.diei.unipg.it/supplementary/public/Datasets/LUCID/Hall_ROS.zip" target="_blank" rel="noopener noreferrer">Hall_ROS.zip</a></td>
+      <td>Rosbags of Hall sequences</td>
+      <td>~116G</td>
+    </tr>
+    <tr>
+      <td><a href="http://sira.diei.unipg.it/supplementary/public/Datasets/LUCID/Lens_Calibration.zip" target="_blank" rel="noopener noreferrer">Lens_Calibration.zip</a></td>
+      <td>Kalibr intrinsics calibration files</td>
+      <td>~859K</td>
+    </tr>
+  </tbody>
+</table>
 
 If you want to explore the dataset remote directory:
  ```url
