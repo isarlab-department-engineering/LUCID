@@ -14,6 +14,15 @@ Direct Sparse Odometry (DSO) and ORB-SLAM3 (OS3), in their monocular implementat
 
 <br clear="left"/> 
 
+**If you use LUCID in an academic work, please cite:**
+
+    @article{crocetti2025comparison,
+      title={Comparison of DSO and ORB-SLAM3 in Low-Light Environments With Auxiliary Lighting and Deep Learning Based Image Enhancing},
+      author={Crocetti, Francesco and Brilli, Raffaele and Dionigi, Alberto and Fravolini, Mario L and Costante, Gabriele and Valigi, Paolo},
+      journal={Journal of Field Robotics},
+      year={2025},
+      publisher={Wiley Online Library}
+    }
 
 ## 1.Overview
 LUCID dataset consists of more than 159 sequences (original and enhanced) acquired in three distinct indoor scenarios and 
@@ -71,32 +80,28 @@ laboratories. They represent most of the way to the mission destination in real 
 areas connected by two hallways, with desks and chairs.
 
   
-<table>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
+  <div style="flex: 1 1 300px; max-width: 300px; text-align: center;">
+    <img src="images/Scenarios/Corridor_A.jpg" alt="Corridor A" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+    <img src="images/Scenarios/Corridor_A_1.jpg" alt="Corridor A 1" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+    <img src="images/Scenarios/Maps/Corridor_A_Map.png" alt="Corridor A Map" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+    <p>Corridor_A</p>
+  </div>
 
-  <tr>
-    <th rowspan="1" style="text-align: center;  vertical-align: middle;"><img src="images/Scenarios/Corridor_A.jpg" alt="Corridor_A_Map" width="300px"/> <br/></th>
-    <th rowspan="1" style="text-align: center;  vertical-align: middle;"><img src="images/Scenarios/Corridor_B.jpg" alt="Corridor_A_Map" width="300px"/> <br/></th>
-    <th rowspan="1" style="text-align: center;  vertical-align: middle;"><img src="images/Scenarios/Hall.jpg" alt="Corridor_A_Map" width="300px"/> <br/></th>
-    
-  </tr>
-  <tr>
-    <th rowspan="1" style="text-align: center;  vertical-align: middle;"><img src="images/Scenarios/Corridor_A_1.jpg" alt="Corridor_A_Map" width="300px"/> <br/></th>
-    <th rowspan="1" style="text-align: center;  vertical-align: middle;"><img src="images/Scenarios/Corridor_B_1.jpg" alt="Corridor_A_Map" width="300px"/> <br/></th>
-    <th rowspan="1" style="text-align: center;  vertical-align: middle;"><img src="images/Scenarios/Hall_1.jpg" alt="Corridor_A_Map" width="300px"/> <br/></th>
-</tr>
-  <tr>
-    <th rowspan="1" style="text-align: center;  vertical-align: middle;"><img src="images/Scenarios/Maps/Corridor_A_Map.png" alt="Corridor_A_Map" width="300px"/> <br/></th>
-    <th rowspan="1" style="text-align: center;  vertical-align: middle;"><img src="images/Scenarios/Maps/Corridor_B_Map.png" alt="Corridor_B_Map" width="300px"/> <br/></th>
-    <th rowspan="1" style="text-align: center;  vertical-align: middle;"><img src="images/Scenarios/Maps/Hall_Map.png" alt="HALL" width="300px"/> <br/></th>
-  </tr>
-  <tr>  
-    <th style="text-align: center;  vertical-align: middle;"> Corridor_A</th>
-    <th style="text-align: center;  vertical-align: middle;"> Corridor_B</th>
-    <th style="text-align: center;  vertical-align: middle;"> HALL</th>
-  </tr>
+  <div style="flex: 1 1 300px; max-width: 300px; text-align: center;">
+    <img src="images/Scenarios/Corridor_B.jpg" alt="Corridor B" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+    <img src="images/Scenarios/Corridor_B_1.jpg" alt="Corridor B 1" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+    <img src="images/Scenarios/Maps/Corridor_B_Map.png" alt="Corridor B Map" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+    <p>Corridor_B</p>
+  </div>
 
-</table>
-
+  <div style="flex: 1 1 300px; max-width: 300px; text-align: center;">
+    <img src="images/Scenarios/Hall.jpg" alt="Hall" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+    <img src="images/Scenarios/Hall_1.jpg" alt="Hall 1" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+    <img src="images/Scenarios/Maps/Hall_Map.png" alt="Hall Map" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+    <p>HALL</p>
+  </div>
+</div>
 
 ## 3.Data
 
